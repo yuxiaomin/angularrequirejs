@@ -11,4 +11,5 @@ python -m SimpleHTTPServer 8088
 Refer to https://github.com/yuxiaomin/angularrequirejs/blob/master/angularRequirejsSample/readme.md to launch web app.
 
 Why I make this sample
+
 For a platform web app it may load UI from distributed web product which is self-contained and individual. The root app only need an entry to know the paths of all the needed resources and the angular module dependency relationships. Then it can load the angular modules and run. In the index.html file it just statically include the common 3rd party libraries, like jQuery, Angular, bootstrap. etc. Beside these index.html file use script tag to load an entry file in which requirejs does the really angular module resource loading job.
